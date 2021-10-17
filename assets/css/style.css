@@ -41,7 +41,9 @@ a{
 .navbar .nav-link{
     color: #fff !important;
 }
-
+.navbar button.nav-link {
+    background: transparent;
+}
 
 /* =================== Banner Style ================== */
 .carousel-item::before{
@@ -70,6 +72,7 @@ a{
     font-size: 30px !important;
     font-weight: 600;
 }
+
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
@@ -101,6 +104,31 @@ a{
 /* // XX-Large devices (larger desktops, 1400px and up) */
 /* @media (min-width: 1400px) { ... } */
 
+/* ================= About Section Start =================== */
+.about_sction{
+    padding-top: 120px;
+}
+.about_details{
+    padding-top: 30px;
+}
+.about_btn {
+    margin: 30px 0px;
+}
+
+.abut_button {
+    border: 1px solid #00ac7a;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background: #00ac7a;
+    transition: 0.5s linear;
+}
+
+.abut_button:hover {
+    background: transparent;
+    color: #000;
+}
 /* ================= Services Section Start =================== */
 .services_section{
     padding: 120px 0;
