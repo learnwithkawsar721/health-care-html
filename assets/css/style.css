@@ -186,4 +186,61 @@ a{
     .services_item:hover .services_details{
         bottom: 26px;
     }
+    .services_title{
+        width: 100%;
+    }
+}
+
+/* ================= doctors_section ================ */
+
+.doctors_section{
+    padding-bottom: 120px;
+}
+
+.doctors_team{
+    margin-top: 30px;
+    border-radius: 20px;
+    border: 1px solid #00ac7a;
+   transition: 0.5s linear;
+}
+.doctors_team:hover{
+    box-shadow: 5px 10px #888888;
+}
+.doctors_team:hover .doctors_img{
+    background-color: #00ac7a;
+}
+.doctors_img{
+    background-color: transparent;
+    text-align: center;
+    padding-top: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: 0.5s linear;
+}
+.doctors_img>img{
+    border-radius: 20px;
+}
+.doctors_details{
+padding-top: 20px;
+text-align: center;
+}
+.doctors_details>h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: #00ac7a;
+}
+.dor_btn{
+    margin:25px 0;
+}
+.dor_btn>a{
+    padding: 15px 15px;
+    border: 1px solid #00ac7a;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.4s linear;
+}
+.dor_btn>a:hover{
+    background-color: #00ac7a;
+    color: #fff;
 }
