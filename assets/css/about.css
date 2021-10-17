@@ -1,0 +1,109 @@
+/* ================== Navbar =================== */
+.navbar{
+    background-color: #00ac7a !important;
+    color: #fff !important;
+}
+.navbar button {
+    border: 0 !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+.navbar .nav-link{
+    color: #fff !important;
+}
+.navbar button.nav-link {
+    background: transparent;
+}
+
+/* ==================== About Banner ================== */
+.about_banner{
+    background: url('../images/about/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    border-image-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.about_banner::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(22, 22, 22, 0.548);
+    z-index: -1;
+}
+.banner_details{
+    padding: 80px 0;
+}
+.about_banner_title{
+    color: #fff;
+}
+.breadcrumb-item,
+.breadcrumb-item>a{
+    color: #fff !important;
+}
+.breadcrumb-item+.breadcrumb-item::before{
+    color: #fff !important;
+}
+
+@media (max-width: 576px) {
+    .banner_details{
+        flex-direction: column;
+    }
+}
+
+/* ================ About Main =================== */
+.about_main{
+    padding: 80px 0;
+    overflow-x: hidden;
+}
+
+.about_main__details{
+    text-align: start;
+    padding: 0 10px;
+}
+.about_main__details>h4{
+    font-size: 20px;
+   padding-top: 10px;
+   color: #00ac7a;
+   font-weight: 500;
+}
+.about_main__details>p{
+    font-size: 16px;
+   padding-top: 10px;
+   color: #333;
+   font-weight: 400;
+}   
+@media (max-width: 576px) {
+    .about_main{
+        padding: 50px 0;
+        overflow-x: hidden;
+    }
+    .about__img{
+       text-align: center;
+        width: 100%;
+    }
+    .about__img>img{
+        width: 95% !important;
+       
+    }
+    .about_main__details{
+        text-align: start;
+        padding: 0 10px;
+    }
+    .about_main__details>h4{
+        font-size: 20px;
+       padding-top: 10px;
+       color: #00ac7a;
+       font-weight: 500;
+    }
+    .about_main__details>p{
+        font-size: 16px;
+       padding-top: 10px;
+       color: #333;
+       font-weight: 400;
+    }
+}
