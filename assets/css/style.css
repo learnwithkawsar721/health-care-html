@@ -206,8 +206,13 @@
     .services_title{
         width: 100%;
     }
+    .services_item {
+        text-align: center;
+    }
+    .services_item>img{
+        width: 95%;
+    }
 }
-
 /* ================= doctors_section ================ */
 
 .doctors_section{
