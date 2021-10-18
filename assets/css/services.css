@@ -1,0 +1,152 @@
+/* ================== Navbar =================== */
+.navbar{
+    background-color: #00ac7a !important;
+    color: #fff !important;
+}
+.navbar button {
+    border: 0 !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+.navbar .nav-link{
+    color: #fff !important;
+}
+.navbar button.nav-link {
+    background: transparent;
+}
+
+/* ==================== About Banner ================== */
+.about_banner{
+    background: url('../images/about/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    border-image-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.about_banner::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(22, 22, 22, 0.548);
+    z-index: -1;
+}
+.banner_details{
+    padding: 80px 0;
+}
+.about_banner_title{
+    color: #fff;
+}
+.breadcrumb-item,
+.breadcrumb-item>a{
+    color: #fff !important;
+}
+.breadcrumb-item+.breadcrumb-item::before{
+    color: #fff !important;
+}
+
+@media (max-width: 576px) {
+    .banner_details{
+        flex-direction: column;
+    }
+}
+
+/* ================= Services Section Start =================== */
+.services_section{
+    padding: 120px 0;
+    overflow-x: hidden;
+}
+
+.services_title{
+    font-size: 36px;
+    font-weight: 700;
+    color: #00ac7a;
+    border-bottom: 2px solid #00ac7a;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.services_item{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 15px 0;
+    cursor: pointer;
+}
+.services_item >img {
+    width: 100%;
+    height: 75%;
+    margin: auto;
+}
+.services_item h3{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #7f9aa0;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    color: #00ac7a;
+}
+.services_item:hover .services_details{
+    bottom: 27px;
+    opacity: 0.9;
+    visibility: visible;
+}
+.services_details{
+    background-color: #00ac7a;
+    text-align: left;
+    border-bottom: 2px solid #00ac7a;  
+    position: absolute; 
+    bottom: -100%;
+    width: 100%;
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s linear;
+    padding: 15px 15px;
+}
+.services_details >h4{
+    font-size: 26px;
+    font-weight: 600;
+    
+    color: #00ac7a;
+
+}
+.services_details >p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.services_details >.readmore{
+    padding-bottom: 20px;
+}
+.services_details >.readmore>a{
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px){
+
+    .services_item:hover .services_details{
+        bottom: 26px;
+    }
+    .services_title{
+        width: 100%;
+    }
+    .services_item {
+        text-align: center;
+    }
+    .services_item>img{
+        width: 95%;
+    }
+}
