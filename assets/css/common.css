@@ -20,3 +20,6 @@ a{
     background-color: #00ac7a !important;
     border-color: #00ac7a !important;
 }
+ol,li{
+    list-style: none;
+}
